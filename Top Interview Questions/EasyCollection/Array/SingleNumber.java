@@ -1,4 +1,4 @@
-package leetCode.EasyCollection.Array;
+package Array;
 
 //import java.util.Arrays;
 

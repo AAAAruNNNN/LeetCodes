@@ -1,4 +1,4 @@
-package leetCode.EasyCollection.Array;
+package Array;
 
 public class RemoveDuplicatesFromSortedArray {
 	public static void main(String args[]) {
