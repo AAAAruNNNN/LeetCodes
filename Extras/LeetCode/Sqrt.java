@@ -16,7 +16,8 @@ public class Sqrt {
                 l = mid+1;
                 
         }
-        return x<mid*mid? mid-1: mid;
+        
+        return x<pow? mid-1: mid;
     }
     
     public static void main(String args[]) {
