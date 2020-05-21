@@ -2,7 +2,7 @@ package LeetCode;
 
 public class CountNegativeNumbersInASortedMatrix {
 	public static void main(String args[]) {
-		int[][] grid = {{3,2,-1,-2},{-1,-2}};
+		int[][] grid = {{3,2,1,1,1,1,0,-1,-2},{-1,-1,-2}};
 		System.out.println(countNegatives(grid));
 	}
 	public static int countNegatives(int[][] grid) {
