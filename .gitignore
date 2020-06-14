@@ -5,5 +5,7 @@
 .classpath
 
 # Classes
-D:/Projects/LeetCodes/build
 *.class
+
+#build folder
+/build/
