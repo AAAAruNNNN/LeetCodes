@@ -1,5 +1,4 @@
 package LinkedLists;
-import LinkedLists.SinglyLinkedList;
 
 public class RemoveNthNodeFromEnd {
     public static SinglyLinkedList removeNthFromEnd(SinglyLinkedList head, int n) {
@@ -25,7 +24,7 @@ public class RemoveNthNodeFromEnd {
     }
     
     public static void main(String args[]) {
-    	SinglyLinkedList head = new SinglyLinkedList().generateList(1, 5);
+    	SinglyLinkedList head = new SinglyLinkedList().generateList(1, 8);
     	head.printSinglyLinkedList(removeNthFromEnd(head,2));
     }
 }

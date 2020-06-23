@@ -1,6 +1,6 @@
 package LinkedLists;
 import java.util.Stack;
-import LinkedLists.SinglyLinkedList;
+
 public class PalindromeLinkedList {
     public boolean isPalindrome(SinglyLinkedList head) {
         if(head == null || head.next == null)
