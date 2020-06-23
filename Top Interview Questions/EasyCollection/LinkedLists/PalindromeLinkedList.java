@@ -1,7 +1,8 @@
 package LinkedLists;
 import java.util.Stack;
+import LinkedLists.SinglyLinkedList;
 public class PalindromeLinkedList {
-    public boolean isPalindrome(ListNode head) {
+    public boolean isPalindrome(SinglyLinkedList head) {
         if(head == null || head.next == null)
             return true;
         if(head.next.next == null){
@@ -10,8 +11,8 @@ public class PalindromeLinkedList {
             return false;
         }
         Stack<Integer> st = new Stack<Integer>();
-        ListNode slow = head;
-        ListNode fast = head;
+        SinglyLinkedList slow = head;
+        SinglyLinkedList fast = head;
         while(fast != null && fast.next!= null){
             st.push(slow.val);
             slow = slow.next;
