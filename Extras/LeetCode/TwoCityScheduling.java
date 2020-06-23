@@ -23,8 +23,9 @@ public class TwoCityScheduling {
         }
         Arrays.sort(A);
         for(int i=2*N - 1;i>=0;i--)
-            if(countA > 0)
+            if(countA > 0) {
                 //cost+=(i[0]>i[1]?i[1]:i[0]);
+            }
         return cost;
     }
 }
