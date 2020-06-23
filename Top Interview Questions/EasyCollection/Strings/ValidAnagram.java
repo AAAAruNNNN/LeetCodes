@@ -3,7 +3,7 @@ package Strings;
 public class ValidAnagram {
 	
 	public static void main(String args[]) {
-		System.out.println(isAnagram("car","arc"));
+		System.out.println(isAnagram("Car","arc"));
 	}
 
     public static boolean isAnagram(String s, String t) {
@@ -25,16 +25,17 @@ public class ValidAnagram {
         // }      
         // return false;
 
-        int[] characters = new int[26];
-        for(char i: s.toCharArray()){
-            characters[i-'a']++;
+        if(s.length() != t.length())
+            return false;
+        int[] charTable = new int[256];
+        for(int i = 0; i< s.length(); i++){
+            charTable[s.charAt(i)]++;
+            charTable[t.charAt(i)]--;
         }
-        for(char i: t.toCharArray()){
-            characters[i-'a']--;
-        }
-        for(int i: characters)
-            if(i!=0)
+        for(int i: charTable){
+            if( i != 0)
                 return false;
+        }
         return true;
     	}
 }
