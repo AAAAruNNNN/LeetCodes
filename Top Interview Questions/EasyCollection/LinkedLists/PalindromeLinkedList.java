@@ -7,7 +7,7 @@ public class PalindromeLinkedList {
 	public static void main(String args[]) {
 		SinglyLinkedList head = new SinglyLinkedList(132);
 		head.next = new SinglyLinkedList(132);
-		System.out.println(isPalindromeRec(head));
+		System.out.println(isPalindrome(head));
 	}
 
 	public static boolean isPalindrome(SinglyLinkedList head) {
@@ -16,10 +16,12 @@ public class PalindromeLinkedList {
 			arr.add(head.val);
 			head = head.next;
 		}
+		/* Integer has its int values boxed so if we compare two Integer directly it checks if both the values are refering 
+		 * to the same object rather than checking if both has same value. if int and Integer values are compared then Integer
+		 * value automatically casts to unboxed primitive int. To check if two Integer (boxed) values use .equals() method or 
+		 * get the intValue() and compare them. */
 		for (int i = 0, j = arr.size() - 1; i < j; i++, j--) {
-			int x = arr.get(i);
-			int y = arr.get(j);
-			if (x != y)
+			if (arr.get(i).intValue() != arr.get(j).intValue())         
 				return false;
 		}
 		return true;
