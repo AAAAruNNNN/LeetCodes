@@ -38,4 +38,13 @@ public class SymmetricTree {
 		}
 		return true;
 	}
+	
+	//Checkout the optimized code: it's exactly the same but lesser no.of lines of code
+//    public boolean isSymRec(TreeNode left, TreeNode right){
+//        if(left == null || right == null)
+//            return left == right;
+//        if(left.val != right.val)
+//            return false;
+//        return isSymRec(left.left,right.right) && isSymRec(left.right,right.left);
+//    }
 }
