@@ -1,16 +1,16 @@
 package LinkedLists;
 
 public class SinglyLinkedList {
-	int val;
-	SinglyLinkedList next;
+	public int val;
+	public SinglyLinkedList next;
 
-	SinglyLinkedList() {}
+	public SinglyLinkedList() {}
 
-	SinglyLinkedList(int val) {
+	public SinglyLinkedList(int val) {
 		this.val = val;
 	}
 
-	SinglyLinkedList(int val, SinglyLinkedList next) {
+	public SinglyLinkedList(int val, SinglyLinkedList next) {
 		this.val = val;
 		this.next = next;
 	}
