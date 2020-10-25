@@ -1,7 +1,7 @@
 package LinkedList;
 import LinkedLists.SinglyLinkedList;
 public class OddEvenLinkedList {
-	
+	//Main Function
 	public static void main(String args[]) {
 		OddEvenLinkedList obj = new OddEvenLinkedList();
 		SinglyLinkedList head = new SinglyLinkedList().generateList(1, 9);
